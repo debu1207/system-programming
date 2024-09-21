@@ -1,0 +1,22 @@
+open syscall
+------------
+
+NAME
+       open - open and possibly create a file
+
+SYNOPSIS
+       #include <sys/types.h>
+       #include <sys/stat.h>
+       #include <fcntl.h>
+
+       int open(const char *pathname, int flags, mode_t mode);
+
+       The  return  value  of open() is a file descriptor, a small, nonnegative integer that is used in subsequent system calls (read(2), write(2), lseek(2), fcntl(2), etc.) to refer to the open file.
+       The file descriptor returned by a successful call will be the lowest-numbered file descriptor not currently open for the process.
+
+RETURN VALUE
+       open(), openat(), and creat() return the new file descriptor (a nonnegative integer), or -1 if an error occurred.
+
+---------------------------------------------------------------------------------------------------------------
+
+
