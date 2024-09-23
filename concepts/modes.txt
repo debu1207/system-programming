@@ -1,0 +1,23 @@
+For different users there can be different set of permissions to access or execute a file.
+
+user | group | other
+
+Each can have their own set permission configuration
+
+Eg: 0rwxr xr x
+Here, the first element show the permission of the special user.
+Next three element describes the permission of the current user. (Read, Write & execute) All permission are given.
+Group is allowed to read and execute but not write into the file.
+Others is also allowed to read and execute but not to write into the file.
+
+-----------------------------------------------------------------------------------
+
+Other way to give permission in decimal number format:
+
+Eg: 0751
+7 => 1 1 1 (Read, Write, Execute)
+5 => 1 0 1 (Read, execute)
+1 => 0 0 1 (only execute)
+
+----------------------------------------------------------------------------------
+
