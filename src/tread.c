@@ -27,5 +27,7 @@ int main() {
 
 	printf("Buffer read: %s\n", buf);
 
+	close(fd);
+	free(buf);
 	return 0;
 }
